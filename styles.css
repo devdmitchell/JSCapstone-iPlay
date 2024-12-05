@@ -1,0 +1,23 @@
+#container{
+    background-color: #c0c0c0;
+    height: 800px;
+    width: 500px;
+    border-radius: 10%;
+}
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.screen{
+    border: 2px solid white;
+    height: 340px;
+    width: 400px;
+    background-color: white;
+    margin: 40px;
+ 
+}
+.button{
+
+}
