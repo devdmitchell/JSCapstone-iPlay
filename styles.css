@@ -35,15 +35,22 @@ align-items: center;
     height: 300px;
     width: 300px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .top{
-    display: flex;
-    justify-content: center;
     margin-top: 5px;
-
 }
 
+.middle{
+   justify-content: space-evenly;
+   
+}
+
+.bottom{
+   
+}
 
 .button{
 color: white;
