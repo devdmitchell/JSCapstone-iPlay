@@ -1,5 +1,5 @@
 #container{
-    background-color: #c0c0c0;
+    background-color: gray;
     height: 800px;
     width: 500px;
     border-radius: 10%;
@@ -16,8 +16,27 @@ align-items: center;
     width: 400px;
     background-color: white;
     margin: 40px;
- 
 }
+.song{
+    border: 1px solid grey;
+    background-color: lightgrey;
+    height: 50px;
+    width: 400px;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    border: 2px solid lightgrey;
+    background-color: lightgray;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
 .button{
 
 }
