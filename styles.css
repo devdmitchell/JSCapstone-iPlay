@@ -4,6 +4,7 @@
     width: 500px;
     border-radius: 10%;
 }
+
 body{
 display: flex;
 justify-content: center;
@@ -12,7 +13,7 @@ align-items: center;
 
 .screen{
     border: 2px solid white;
-    height: 340px;
+    height: 310px;
     width: 400px;
     background-color: white;
     margin: 40px;
@@ -20,8 +21,12 @@ align-items: center;
 .song{
     border: 1px solid grey;
     background-color: lightgrey;
+    color: white;
     height: 50px;
     width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .body{
@@ -36,7 +41,8 @@ align-items: center;
     width: 300px;
     border-radius: 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .top{
@@ -44,8 +50,16 @@ align-items: center;
 }
 
 .middle{
-   justify-content: space-evenly;
+justify-content: space-between;
    
+}
+
+.left{
+    width: 150px;
+}
+
+.right{
+    width: 150px;
 }
 
 .bottom{
