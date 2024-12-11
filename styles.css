@@ -1,5 +1,5 @@
 #container{
-    background-color: gray;
+    background-color: silver;
     height: 800px;
     width: 500px;
     border-radius: 10%;
@@ -94,13 +94,43 @@ align-items: center;
     height: 60px; 
 }
 
+@media screen and (max-width: 600px) {
+    #container {
+        height: 500px;
+        width: 300px;
+        border-radius: 15%;
+    }
 
+    .screen {
+        height: 200px;
+        width: 250px;
+        margin: 20px;
+    }
 
+    .song {
+        height: 40px;
+        width: 250px;
+        font-size: 12px;
+    }
 
-@media screen {
-    container{
-        max-height: 400px;
-        max-width: 250px;
-        background-color: blue;
+    .circle {
+        height: 150px;
+        width: 150px;
+    }
+
+    .button {
+        width: 150px;
+        height: 40px;
+    }
+
+    .middle {
+        width: 100px;
+        height: 30px;
+    }
+
+    .middle .left,
+    .middle .right {
+        width: 50px;
+        font-size: 12px;
     }
 }
