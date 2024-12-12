@@ -78,6 +78,11 @@ align-items: center;
     width: 150px;
 }
 
+.right {
+display: flex;
+justify-content: end;
+}
+
 .bottom {
     bottom: 2%; 
     left: 50%;
