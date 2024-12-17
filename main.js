@@ -32,7 +32,7 @@ function togglePlayPause() {
         audio.pause();      //pause the song
         console.log(`Paused: ${currentSong.textContent}`);
     } else {
-        audio.play();         //plat the song
+        audio.play();         //play the song
         console.log(`Playing: ${currentSong.textContent}`);
     }
     isPlaying = !isPlaying;

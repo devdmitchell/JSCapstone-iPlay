@@ -99,3 +99,23 @@ justify-content: end;
     width: 300px;
     height: 60px; 
 }
+
+
+@media screen and (max-height: 1024px) and (max-width: 768px) {
+    #container {
+        border-radius: 0px;
+        background-color: limegreen;
+        height: 400px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+   .screen {
+        display: none;
+   }
+   .body{
+       display: flex;
+       justify-content: center;
+   }
+}
