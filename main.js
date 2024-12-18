@@ -1,3 +1,48 @@
+window.addEventListener('resize', (event)=>{
+    if (window.innerWidth < 768) {
+        menu.textContent = '+'; // Change the text to "+"
+    } else {
+        menu.textContent = 'MENU'; // Revert to "MENU" for the original ipod
+    }
+});
+
+// Select the bottom button
+const buttonBottom = document.getElementById('play-pause');
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth < 768) {
+        buttonBottom.textContent = '-'; // Change the text to "-"
+    } else {
+        buttonBottom.textContent = '▶||'; // Revert to "▶||" for the original iPod
+    }
+});
+
+const middleButtons = document.querySelector('.middle');   //select the middle buttons
+let playPauseMiddleButton; // create the variable to store the added button
+
+// Resize event listener to handle adding and removing the play/pause button
+window.addEventListener('resize', () => {
+    if (window.innerWidth < 768) {
+        // Add play/pause button in the middle
+        if (!playPauseMiddleButton) {
+            playPauseMiddleButton = document.createElement('button');
+            playPauseMiddleButton.id = 'play-pause-middle';
+            playPauseMiddleButton.textContent = '▶||';
+            playPauseMiddleButton.style.margin = '0 10px';
+            playPauseMiddleButton.addEventListener('click', togglePlayPause); // Reuse existing togglePlayPause function
+
+            // Insert the button between skip forward and skip backward
+            middleButtons.insertBefore(playPauseMiddleButton, middleButtons.children[1]);
+        }
+    } else {
+        // Remove the play/pause button if the screen width is larger
+        if (playPauseMiddleButton) {
+            middleButtons.removeChild(playPauseMiddleButton);
+            playPauseMiddleButton = null; // Clear the reference
+        }
+    }
+});
+
 // Select necessary elements
 const songs = document.querySelectorAll('.song');   //grabs all songs
 const playPauseButton = document.getElementById('play-pause');   //play pause button

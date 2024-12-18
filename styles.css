@@ -105,8 +105,8 @@ justify-content: end;
     #container {
         border-radius: 0px;
         background-color: silver;
-        height: 400px;
-        width: 400px;
+        height: 600px;
+        width: 600px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -118,5 +118,8 @@ justify-content: end;
        display: flex;
        justify-content: center;
    }
-
+.circle{
+    height: 400px;
+    width: 400px;
+}
 }
